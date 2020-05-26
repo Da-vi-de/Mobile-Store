@@ -6,7 +6,7 @@ function Header() {
         <header>
             
             <Link to='/'><h2 className='mobile-header'>
-                <i class="ri-smartphone-fill"></i>
+                <i class="ri-smartphone-line"></i>
                 Mobile Store
                 </h2>
             </Link>

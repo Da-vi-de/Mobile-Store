@@ -9,7 +9,8 @@ function App() {
   return (
     <div>
       <Header />
-
+      
+      
         <Switch>
           <Route exact path='/'>
             <Mobile />

@@ -17,13 +17,15 @@ body {
 }
 
 
-.ri-shopping-cart-line {
-  padding: .3em .3em;
+.ri-shopping-cart-line:hover,
+.mobile-header:hover {
+  padding: .2em .3em;
   border: 2px solid;
   border-radius: 20px ;
   border-color: #1f1cd1;
   cursor: pointer;
 }
+
 
 /*============
 === Layout ===*/
@@ -35,14 +37,23 @@ body {
   background: #fff;
 }
 
+.carousel-container {
+  margin-bottom: 3em;
+  background:  #f3f3fa;
+  border-radius: 10px;
+}
+
+.carousel-container:focus {
+  outline: none;
+}
 
 header {
   display: flex;
+  position: relative;
   justify-content: space-between;
-  align-items: center;
   background-color: #F47B6E;
   border-radius: 5px;
-  padding: 1em 3em;
+  padding: 1.7em 3em;
   
 }
 
@@ -76,8 +87,9 @@ a:focus,
 
 .mobile-header {
   font-size: 2rem;
-  
+  position: absolute;
 }
+
 .products {
   position: relative;
   font-size: 2.2rem;
