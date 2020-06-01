@@ -29,7 +29,7 @@ body {
 .ri-add-circle-line,
 .ri-shopping-cart-fill{
   margin-left: .5em;
-  padding: .2em .2em;
+  padding: .2em .3em;
   border-radius: 10px;
   background-color: #d3d3d6;
 }
@@ -41,6 +41,7 @@ body {
 .ri-shopping-cart-fill {
   color: #ff9900;
 }
+
 
 /*============
 === Layout ===*/

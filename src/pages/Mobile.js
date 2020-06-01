@@ -1,11 +1,13 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useState, useContext } from 'react'
 import data from '../data'
 import MobileCarousel from '../components/MobileCarousel'
 import Footer from '../components/Footer'
 
+import {Context} from '../Context'
+
 function Mobile() {
     const [hovered, setHovered] = useState(false)
-    const [cartItems, setCartItems] = useState([])
+    const {cartItems, addToCart, removeFromCart} = useContext(Context)
 
     const mobiles = data.map(mobile => (
         <div className='card' key={mobile.id}
@@ -22,14 +24,6 @@ function Mobile() {
     
     ))
     
-function addToCart(newItem) {
-    setCartItems(prevItems => [...prevItems, newItem])
-}
-
-function removeFromCart(id) {
-    setCartItems(prevItems => prevItems.filter(item => item.id !== id))
-}
-
 function cartIcon(item) {
     const alreadyInCart = cartItems.includes(item)
     if(alreadyInCart) {
@@ -38,8 +32,6 @@ function cartIcon(item) {
         return <i className="ri-add-circle-line cart"   onClick = {() => addToCart(item)}></i>
     }
 }
-
-
 
     return(
         <Fragment>
