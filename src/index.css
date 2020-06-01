@@ -1,14 +1,15 @@
 html,
 body {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   font-family:  'Oswald', sans-serif;
-  background: linear-gradient(184deg, rgba(243,243,250,1) 9%, rgba(148,224,243,1) 100%);
+  background: #f3f3fa;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .ri-smartphone-fill {
-  color: #1f1cd1;
+  color: #ff9900;
   font-size: 2rem;
 }
 
@@ -20,12 +21,26 @@ body {
 .ri-shopping-cart-line:hover,
 .mobile-header:hover {
   padding: .2em .3em;
-  border: 2px solid;
+  border: 1.5px solid rgba(242, 244, 246, .9);
   border-radius: 20px ;
-  border-color: #1f1cd1;
-  cursor: pointer;
 }
 
+
+.ri-add-circle-line,
+.ri-shopping-cart-fill{
+  margin-left: .5em;
+  padding: .2em .2em;
+  border-radius: 10px;
+  background-color: #d3d3d6;
+}
+
+.ri-add-circle-line {
+  color: #0f171e;
+}
+
+.ri-shopping-cart-fill {
+  color: #ff9900;
+}
 
 /*============
 === Layout ===*/
@@ -43,6 +58,10 @@ body {
   border-radius: 10px;
 }
 
+.carousel-container img {
+ margin: auto;
+}
+
 .carousel-container:focus {
   outline: none;
 }
@@ -51,9 +70,9 @@ header {
   display: flex;
   position: relative;
   justify-content: space-between;
-  background-color: #F47B6E;
+  background-color: #0f171e;
   border-radius: 5px;
-  padding: 1.7em 3em;
+  padding: 1em 3em;
   
 }
 
@@ -61,10 +80,8 @@ header {
   display: inline-flex;
   width: 30%;
   margin: 0 2em 3em 6.5em;
-  padding: .5 3em;
   border-radius: 10px;
 }
-
  .card:hover {
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4);;
 }
@@ -73,32 +90,33 @@ header {
 .footer {
   display: flex;
   justify-content: space-between;
-  background-color: #F47B6E;
+  background-color: #0f171e;
   border-radius: 5px;
-  padding: 1.7em 3em;
+  padding: 1em 3em;
   font-weight: bold;
   text-transform: uppercase;
-  color: #1f1cd1;
+  color: rgba(242, 244, 246, .9);
 }
 
 .footer-media {
   display: inline-flex;
+  margin-top: 1em;
 }
 
 .footer-media i {
   margin-left: .7em;
-  margin-right: .2em;
+  margin-right: .2em ;
   font-size: 1rem;
 }
 
 .footer-media i:hover {
-  color: #94e0f3;
+  color: #ff9900;
 }
 
 .footer-rights p {
   margin: 0;
   text-align: center;
-  font-size: .8rem;
+  font-size: .6rem;
 }
 
 /*================
@@ -107,12 +125,12 @@ header {
 a,
 a:hover{
   text-decoration: none;
-  color: #1f1cd1;
+  color: rgba(242, 244, 246, .9);
 }
 
 a:focus,
   active {
-    color: #94e0f3;
+    color: #787879e6;
   }
                           
 
@@ -126,7 +144,7 @@ a:focus,
   font-size: 2.2rem;
   text-align: center;
   text-transform: uppercase;
-  color: #1f1cd1;
+  color: #0f171e;
   padding: 1em 0;
 }
 
@@ -137,7 +155,7 @@ a:focus,
   height: 7px;
   top: 15px;
   left: 40%;
-  background-color: #94e0f3;
+  background-color: rgba(120, 120, 121, 0.9);
 }
 
 .mobile-title {
