@@ -17,6 +17,21 @@ body {
   width: 80%;
 }
 
+.cart-item {
+  display: flex;
+  align-items: center;
+}
+
+
+.mobile-cart {
+  width: 30%;
+  margin: 0 0 3em 1em;
+  padding: 1em;
+  text-align: center;
+  background-color: #f3f3fa;
+  border-radius: 10px;
+}
+
 
 .ri-shopping-cart-line:hover,
 .mobile-header:hover {
@@ -42,15 +57,48 @@ body {
   color: #ff9900;
 }
 
+.ri-delete-bin-line {
+  margin-left: auto;
+}
+
+.order-button {
+  margin-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.btn {
+  padding: .2em .5em;
+  background-color: #ff9900;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  outline: none;
+}
+
+.btn:focus,
+    active {
+       outline: none;
+       color: #787879e6;
+       box-shadow: none;
+}
+
 
 /*============
 === Layout ===*/
 
-.container {
-  width: 60%;
-  max-width: 900px;
+.container,
+.checkout-container {
   margin: 0 auto;
   background: #fff;
+  min-height: 650px;
+}
+
+.container {
+  width: 60%;
+}
+
+.checkout-container {
+  width: 40%;
 }
 
 .carousel-container {
@@ -140,7 +188,7 @@ a:focus,
   position: absolute;
 }
 
-.products {
+.our-products-checkout {
   position: relative;
   font-size: 2.2rem;
   text-align: center;
@@ -149,13 +197,23 @@ a:focus,
   padding: 1em 0;
 }
 
-.products:before {
+.our-products-checkout:before {
   content: '';
   position: absolute;
   width: 20%;
   height: 7px;
   top: 15px;
-  left: 40%;
+  left: 41%;
+  background-color: rgba(120, 120, 121, 0.9);
+}
+
+.checkout:before{
+  content: '';
+  position: absolute;
+  width: 15%;
+  height: 7px;
+  top: 15px;
+  left: 44%;
   background-color: rgba(120, 120, 121, 0.9);
 }
 
@@ -177,6 +235,20 @@ a:focus,
   text-decoration: bold;
   font-size: 1.3rem;
   margin: 0;
+}
+
+.mobile-cart-price {
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: bold;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.total-cost {
+  margin-right: 6em;
+  text-align: right;
+  font-size: 2rem;
 }
 
 

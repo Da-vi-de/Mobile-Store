@@ -36,7 +36,7 @@ function cartIcon(item) {
     return(
         <Fragment>
             <main className='container'> 
-                <h1 className='products'>
+                <h1 className='our-products-checkout'>
                     <i className="ri-smartphone-fill"></i>
                     Our Products
                 </h1>
