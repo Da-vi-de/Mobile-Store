@@ -13,8 +13,17 @@ function ContextProvider({children}) {
         setCartItems(prevItems => prevItems.filter(item => item.id !== id))
     }
 
+    function emptyCart() {
+        setCartItems([])
+    }
+
     return(
-        <Context.Provider value= {{cartItems, addToCart, removeFromCart}}>
+        <Context.Provider value= {{
+            cartItems, 
+            addToCart, 
+            removeFromCart, 
+            emptyCart
+        }}>
             {children}
         </Context.Provider>
     )

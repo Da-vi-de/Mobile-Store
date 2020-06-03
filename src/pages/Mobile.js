@@ -19,7 +19,7 @@ function Mobile() {
                 <img src= {mobile.img}  alt='Mobile phones' className='mobile-img' />
                 <h3 className='mobile-title'>{mobile.title}</h3>
                 <p className='mobile-info'>{mobile.info}</p>
-                <p className='mobile-price'>€ {mobile.price} {cartIcon(mobile)}</p>
+                <p className='mobile-price'>{mobile.price} € {cartIcon(mobile)}</p>
         </div>
     
     ))

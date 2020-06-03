@@ -59,17 +59,19 @@ body {
 
 .ri-delete-bin-line {
   margin-left: auto;
+  font-weight: 600;
 }
 
 .order-button {
-  margin-top: 2em;
-  padding-bottom: 2em;
+  margin-top: 2.5em;
+  padding-bottom: 2.5em;
   text-align: center;
 }
 
 .btn {
   padding: .2em .5em;
   background-color: #ff9900;
+  color: #0f171e;
   font-size: 1.5rem;
   border-radius: 10px;
   outline: none;
@@ -242,13 +244,13 @@ a:focus,
   margin-right: auto;
   text-decoration: bold;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .total-cost {
-  margin-right: 6em;
+  margin-right: 4.5em;
   text-align: right;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 
