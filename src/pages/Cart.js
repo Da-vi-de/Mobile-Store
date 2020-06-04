@@ -37,9 +37,13 @@ function Cart() {
                
                 {cartItemElements}
                 <p className="total-cost">Total: {totalCostDisplay}</p>
+                {
+                     cartItems.length > 0 ?
                 <div className='order-button'>
                     <button className='btn' onClick={() => {placeOrder()}}>{buttonText}</button>
-                </div> 
+                </div> :
+                <p className='empty-cart'>You have no items in your cart</p>
+                }
             </main>
 
             <Footer />

@@ -17,12 +17,6 @@ body {
   width: 80%;
 }
 
-.cart-item {
-  display: flex;
-  align-items: center;
-}
-
-
 .mobile-cart {
   width: 30%;
   margin: 0 0 3em 1em;
@@ -53,14 +47,18 @@ body {
   color: #0f171e;
 }
 
-.ri-shopping-cart-fill {
+.ri-shopping-cart-fill,
+.ri-delete-bin-fill {
   color: #ff9900;
 }
 
-.ri-delete-bin-line {
+.ri-delete-bin-line, 
+.ri-delete-bin-fill {
   margin-left: auto;
   font-weight: 600;
+  cursor: pointer;
 }
+
 
 .order-button {
   margin-top: 2.5em;
@@ -170,6 +168,12 @@ header {
   font-size: .6rem;
 }
 
+.cart-item {
+  display: flex;
+  align-items: center;
+}
+
+
 /*================
 === Typography ===*/
 
@@ -253,6 +257,14 @@ a:focus,
   font-size: 1.5rem;
 }
 
+.empty-cart {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:  #0f171e;
+  text-align: center;
+  text-transform: uppercase;
+}
 
+/*#fc0303;*/
 
 
