@@ -8,10 +8,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.ri-smartphone-fill {
-  color: #ff9900;
-  font-size: 2rem;
-}
+/*============
+=== Images ===*/
 
 .mobile-img {
   width: 80%;
@@ -26,6 +24,13 @@ body {
   border-radius: 10px;
 }
 
+/*============
+=== Icons ===*/
+
+.ri-smartphone-fill {
+  color: #ff9900;
+  font-size: 2rem;
+}
 
 .ri-shopping-cart-line:hover,
 .mobile-header:hover {
@@ -59,6 +64,8 @@ body {
   cursor: pointer;
 }
 
+/*============
+=== Buttons ===*/
 
 .order-button {
   margin-top: 2.5em;
@@ -264,7 +271,3 @@ a:focus,
   text-align: center;
   text-transform: uppercase;
 }
-
-/*#fc0303;*/
-
-
