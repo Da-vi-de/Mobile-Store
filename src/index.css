@@ -52,6 +52,12 @@ body {
   color: #0f171e;
 }
 
+.footer-media i {
+  margin-left: .7em;
+  margin-right: .2em ;
+  font-size: 1rem;
+}
+
 .ri-shopping-cart-fill,
 .ri-delete-bin-fill {
   color: #ff9900;
@@ -159,21 +165,10 @@ header {
   margin-top: 1em;
 }
 
-.footer-media i {
-  margin-left: .7em;
-  margin-right: .2em ;
-  font-size: 1rem;
-}
-
 .footer-media i:hover {
   color: #ff9900;
 }
 
-.footer-rights p {
-  margin: 0;
-  text-align: center;
-  font-size: .6rem;
-}
 
 .cart-item {
   display: flex;
@@ -258,6 +253,12 @@ a:focus,
   font-weight: 500;
 }
 
+.footer-rights p {
+  margin: 0;
+  text-align: center;
+  font-size: .6rem;
+}
+
 .total-cost {
   margin-right: 4.5em;
   text-align: right;
@@ -270,4 +271,139 @@ a:focus,
   color:  #0f171e;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .container,
+    .checkout-container {
+      width: 100%;
+    }
+
+    header {
+      padding: .6em 1.5em;
+    }
+
+    .mobile-header {
+      font-size: 1.5rem;
+    }
+
+    .ri-smartphone-fill {
+      font-size: 1em;
+    }
+
+    .ri-shopping-cart-line,
+    .ri-shopping-cart-fill {
+      font-size: 1.5em;
+    }
+
+    .our-products-checkout {
+      font-size: 1.7rem;
+      margin-bottom: 0;
+    }
+
+    .carousel-container {
+      margin: 1em .2em;
+    }
+
+    .carousel-container img {
+      width: 30%;
+
+    }
+
+    .card {
+      margin: 1em 2em 2em 4.5em;
+      margin-bottom: 2em;
+    }
+
+    .mobile-title,
+    .empty-cart {
+      font-size: 1.5rem;
+    }
+
+    .mobile-info {
+      font-size: .8rem;
+    }
+
+    .mobile-price {
+      font-size: 1rem
+    }
+
+    .footer-media p,
+    .footer-media i {
+      font-size: .6rem;
+    }
+
+    .footer-rights p {
+      margin: .3em;
+      font-size: .4rem;
+    }
+
+}
+
+@media (max-width: 750px) {
+  .container,
+  .checkout-container {
+    width: 100%;
+  }
+
+  header {
+    padding: .6em 1.5em;
+  }
+
+  .mobile-header {
+    font-size: 1.5rem;
+  }
+
+  .ri-smartphone-fill {
+    font-size: 1em;
+  }
+
+  .ri-shopping-cart-line,
+  .ri-shopping-cart-fill {
+    font-size: 1.5em;
+  }
+
+  .our-products-checkout {
+    font-size: 1.7rem;
+    margin-bottom: 0;
+  }
+
+  .carousel-container {
+    margin: 1em .2em;
+  }
+
+  .carousel-container img {
+    width: 30%;
+
+  }
+
+  .card {
+    left: 4.5em;
+    margin-bottom: 1em;
+  }
+
+  .mobile-title,
+  .empty-cart {
+    font-size: 1rem;
+  }
+
+  .mobile-info {
+    font-size: .6rem;
+  }
+
+  .mobile-price {
+    font-size: .9rem
+  }
+
+  .footer-media p,
+  .footer-media i {
+    font-size: .6rem;
+  }
+
+  .footer-rights p {
+    margin: .3em;
+    font-size: .4rem;
+  }
+
+
 }
