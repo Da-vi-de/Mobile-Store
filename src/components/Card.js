@@ -16,9 +16,10 @@ function Card({mobile}) {
         }
     }
 
+    
     return(
             <main className='card' ref={ref}> 
-                <img src= {mobile.img}  alt='Mobile phones' className='mobile-img' />
+                <img  src= {mobile.img}  alt='Local images not loading' className='mobile-img' />
                 <h3 className='mobile-title'>{mobile.title}</h3>
                 <p className='mobile-info'>{mobile.info}</p>
                 <p className='mobile-price'>{mobile.price} € {cartIcon(mobile)}</p>
@@ -26,6 +27,7 @@ function Card({mobile}) {
             </main>
     
     )
+   
 }
 
 

@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react'
-import data from '../data'
+import {storeProducts} from '../data'
 import Card from '../components/Card'
 import MobileCarousel from '../components/MobileCarousel'
 import Footer from '../components/Footer'
 
 function Mobile() {
-    const mobiles = data.map(mobile => (
+    const mobiles = storeProducts.map(mobile => (
         <Card  key={mobile.id} mobile={mobile} />
 
     ))
