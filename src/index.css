@@ -212,7 +212,7 @@ a:focus,
   height: 7px;
   top: 15px;
   left: 41%;
-  background-color: rgba(120, 120, 121, 0.9);
+  background-color: #787879e6;
 }
 
 .checkout:before{
@@ -222,7 +222,7 @@ a:focus,
   height: 7px;
   top: 15px;
   left: 44%;
-  background-color: rgba(120, 120, 121, 0.9);
+  background-color: #787879e6;
 }
 
 .mobile-title {
