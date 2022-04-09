@@ -1,11 +1,11 @@
 import React from 'react'
-import data from '../data'
+import {storeProducts} from '../data'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 
 function MobileCarousel() {
-    const photos = data.map(photo => (
+    const photos = storeProducts.map(photo => (
         <div key={photo.id} className= 'carousel-container'>
             <img src={photo.img} alt='Photos slideshow' />
         </div>
